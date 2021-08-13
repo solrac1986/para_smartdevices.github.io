@@ -1,0 +1,1 @@
+# para_smartdevices.github.io
