@@ -15,6 +15,11 @@ The ubiquity of smart devices, combined with a lack of information about data ga
 {% include filters.html %}
 
 
+### Third parties data infering 
+
+Emotion recognition has been actively studied from both images and audio. Patents such as Amazon [Business Insider, Alexa emotional intelligence] show the increasing interest of companies to gather more accurate information about users' whereabouts. There are several open toolkits (such as EmoPy and OpenSMILE) that can be used to accomplish this task easily. While we are not certain whether there exists a commercial device that integrates such toolkits into smart cameras or speakers, this capability exists and is easy to use, posing a real threat to the users. Furthermore, even if such a device would not be available at the moment, the patents mentioned above highlight how it is only a matter of time before they will become available, and thus our experiments cover a wide range of privacy threats, from well-known and easy to understand to complex and emerging that have not been actively studied.
+
+
 
 You can use the [editor on GitHub](https://github.com/solrac1986/para_smartdevices.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
