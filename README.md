@@ -11,8 +11,8 @@ The ubiquity of smart devices, combined with a lack of information about data ga
 
 
 ### The Privacy Filters
-{% assign filter-default= "default" %}
-{% include filters.html filter = filter-default%}
+{% assign filter_default= "default" %}
+{% include filters.html filter = filter_default %}
 
 
 ### Third parties data infering 
