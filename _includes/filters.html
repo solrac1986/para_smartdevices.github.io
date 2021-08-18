@@ -17,7 +17,7 @@
  </div>
 
 <figure>
-   <img id="imageFilter" src="/assets/images/default_filter.jpg"/>
+   <img id="imageFilter" src="assets/images/default_filter.jpg"/>
    <figcaption id="captionFilter">No filters enabled, default image</figcaption>
 </figure>
 
@@ -28,12 +28,12 @@
      function changeImage(filterName, imgFile, imgCaption) {
           imageFile = imgFile;
           imageCaption = imgCaption;
-          document.getElementById('imageFilter').src="/assets/images/" + imageFile;
+          document.getElementById('imageFilter').src="assets/images/" + imageFile;
           document.getElementById('captionFilter').innerHTML =imageCaption;
           var trs = document.getElementById("navbar");
           for (var i =0; i<trs.length; i++) {
-               tds[n].style.backgroundColor = 'white';
-               tds[n].style.color = 'black';
+               trs[n].style.backgroundColor = 'white';
+               trs[n].style.color = 'black';
           }
           document.getElementById(filterName).style.backgroundColor = '#4099ff';
           document.getElementById(filterName).style.color = 'white';
