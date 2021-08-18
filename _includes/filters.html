@@ -1,32 +1,41 @@
 
 <table>
-     <tr>
-         <td><a href="" onclick="changeImage('face_filter.jpg', 'Face filter'); return false;">Face {% assign include.filter = "face_filter.jpg" include.caption_default="Face filter" %}</a></td>
-         <td><a href=".">Eye</a></td>
-         <td><a href="about">Age</a></td>
-         <td><a href="about">Gender</a></td>
-        <td><a href="about">Emotion</a></td>
+     <tr id='navbar'>
+         <td id='face'><a href="" onclick="changeImage('face', 'face_filter.jpg', 'Face filter'); return false;">Face</a></td>
+         <td id='eye'><a href="" onclick="changeImage('eye', 'eye_filter.jpg', 'Eye filter'); return false;">Eye</a></td>
+         <td id='age'><a href="" onclick="changeImage('age', 'age_filter.jpg', 'Age filter'); return false;">Age</a></td>
+         <td id='gender'><a href="" onclick="changeImage('gender', 'gender_filter.jpg', 'Gender filter'); return false;">Gender</a></td>
+         <td id='emotion'><a href="" onclick="changeImage('emotion', 'emotion_filter.jpg', 'Emotion filter'); return false;">Emotion</a></td>
+         <td></td>
+         <td id='default'><a href="" onclick="changeImage('default', 'default_filter.jpg', 'No filters enabled, default image'); return false;">No filters</a></td>
   </tr>
  </table>
  <hr>
+
  <div class="content">
      {{include.filter}}
  </div>
 
 <figure>
-   <img id="imageFilter" src=""/>
-   <figcaption id="captionFilter"></figcaption>
+   <img id="imageFilter" src="/assets/images/default_filter.jpg"/>
+   <figcaption id="captionFilter">No filters enabled, default image</figcaption>
 </figure>
 
 
 <script>
      var imageFile = '';
      var imageCaption = '';
-     function changeImage(imgFile, imgCaption) {
+     function changeImage(filterName, imgFile, imgCaption) {
           imageFile = imgFile;
           imageCaption = imgCaption;
-          document.getElementById('imageFilter').src="/assets/images/imagePath" + imageFile;
+          document.getElementById('imageFilter').src="/assets/images/" + imageFile;
           document.getElementById('captionFilter').innerHTML =imageCaption;
+          var trs = document.getElementById("navbar");
+          for (var i =0; i<trs.length; i++) {
+               document.getElementById('navbar td').each(fim).backgroundColor = 'white';
+          }
+          document.getElementById(filterName).style.backgroundColor = '#4099ff';
+          
      }
      console.log(imageFile);
 </script>
