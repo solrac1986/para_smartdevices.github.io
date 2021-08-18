@@ -38,5 +38,15 @@ The application detects nearby smart devices using object detection and Bluetoot
 Emotion recognition has been actively studied from both images and audio. Patents such as Amazon [Business Insider, Alexa emotional intelligence] show the increasing interest of companies to gather more accurate information about users' whereabouts. There are several open toolkits (such as EmoPy and OpenSMILE) that can be used to accomplish this task easily. While we are not certain whether there exists a commercial device that integrates such toolkits into smart cameras or speakers, this capability exists and is easy to use, posing a real threat to the users. Furthermore, even if such a device would not be available at the moment, the patents mentioned above highlight how it is only a matter of time before they will become available, and thus our experiments cover a wide range of privacy threats, from well-known and easy to understand to complex and emerging that have not been actively studied.
 
 
+## Source
+
+- Proceedings of the 2021 International Conference on Multimodal Interaction (ICMI '21). *DOI: 10.1145/3462244.3479885*
+
+### Authors
+- Carlos Bermejo Fernandez <cbf@cse.ust.hk>
+- Lik Hang Lee <likhang.lee@kaist.ac.kr>
+- Petteri Nurmi <petteri.nurmi@helsinki.fi>
+- Pan Hui <panhui@cse.ust.hk>
+
 
 
