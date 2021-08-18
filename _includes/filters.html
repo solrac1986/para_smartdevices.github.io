@@ -1,6 +1,12 @@
+---
+layout: filters
+title: Privacy Filters
+filter: default
+---
+
 <table>
      <tr>
-         <td><a href="/content/face_filter.html" {% if page.url == "/content/face_filter.html" %}style="color: red;"{% endif %}>Face</a></td>
+         <td><a href="/" {% assign page.filter = "face_filter.jpg" %} }>Face</a></td>
          <td><a href=".">Eye</a></td>
          <td><a href="about">Age</a></td>
          <td><a href="about">Gender</a></td>
@@ -8,3 +14,8 @@
   </tr>
  </table>
  <hr>
+
+<figure>
+   <img src="{{site.url}}/assests/images/{{page.filter}}"/>
+   <figcaption>"Face filter enabled"</figcaption>
+</figure>
