@@ -1,7 +1,7 @@
 
 <table>
      <tr>
-         <td><a href="." onclick="changeImage('face_filter.jpg', 'Face filter')">Face {% assign include.filter = "face_filter.jpg" include.caption_default="Face filter" %}</a></td>
+         <td><a href="" onclick="changeImage('face_filter.jpg', 'Face filter'); return false;">Face {% assign include.filter = "face_filter.jpg" include.caption_default="Face filter" %}</a></td>
          <td><a href=".">Eye</a></td>
          <td><a href="about">Age</a></td>
          <td><a href="about">Gender</a></td>
@@ -26,7 +26,7 @@
           imageFile = imgFile;
           imageCaption = imgCaption;
           document.getElementById('imageFilter').src="assests/images/imagePath" + imageFile;
-          document.getElementById('captionFilter').text(imageCaption);
+          document.getElementById('captionFilter').innerHTML =imageCaption;
      }
      console.log(imageFile);
 </script>
