@@ -26,7 +26,8 @@
           imageCaption = imgCaption;
           document.getElementById('imageFilter').src="assets/images/" + imageFile;
           document.getElementById('captionFilter').innerHTML =imageCaption;
-          var tds = document.getElementById("navbar");
+          var trNode = document.getElementById("navbar");
+          var tds = trNode.getElementsByTagName("td");
           for (var i =0; i<tds.length; i++) {
                tds[i].style.backgroundColor = 'white';
                tds[i].style.color = 'black';
