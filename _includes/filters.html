@@ -32,9 +32,11 @@
           document.getElementById('captionFilter').innerHTML =imageCaption;
           var trs = document.getElementById("navbar");
           for (var i =0; i<trs.length; i++) {
-               document.getElementById('navbar td').each(fim).backgroundColor = 'white';
+               tds[n].style.backgroundColor = 'white';
+               tds[n].style.color = 'black';
           }
           document.getElementById(filterName).style.backgroundColor = '#4099ff';
+          document.getElementById(filterName).style.color = 'white';
           
      }
      console.log(imageFile);
